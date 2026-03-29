@@ -1,0 +1,111 @@
+2026-03-30 00:54:04,520 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 00:54:04,520 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 00:54:11,288 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 00:54:11,288 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 00:54:37,759 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 00:54:37,759 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 00:57:27,438 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 00:57:27,684 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 00:57:27,684 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 00:57:27,949 - ats_resume_scorer - ERROR - routes:69 - Full analysis pipeline failed: GROQ_API_KEY environment variable is not set. Get your key from https://console.groq.com/keys
+2026-03-30 00:58:15,153 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 00:58:18,425 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 00:58:18,425 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 00:58:25,078 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 00:58:25,078 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 00:58:39,081 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 00:58:39,081 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 00:58:39,241 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 00:58:39,521 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 00:58:39,521 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 00:58:42,978 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 00:58:42,979 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 45
+2026-03-30 00:58:42,979 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 00:58:55,848 - ats_resume_scorer - ERROR - routes:69 - Full analysis pipeline failed: unsupported operand type(s) for +: 'NoneType' and 'str'
+2026-03-30 01:11:06,155 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:11:07,312 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:11:07,312 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:11:13,142 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:11:13,142 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:11:25,339 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:11:25,339 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:11:31,152 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:11:31,762 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:11:31,762 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:11:36,233 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:11:36,233 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:11:46,645 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:11:46,645 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:11:46,783 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:11:46,996 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:11:46,996 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:11:50,657 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:11:50,657 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:11:50,657 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 01:11:58,644 - ats_resume_scorer - ERROR - routes:69 - Full analysis pipeline failed: unsupported operand type(s) for +: 'NoneType' and 'str'
+2026-03-30 01:12:58,978 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:12:59,834 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:12:59,834 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:13:04,905 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:13:04,905 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:13:16,142 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:13:16,142 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:13:22,724 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:13:22,929 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:13:22,930 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:13:26,270 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:13:26,270 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:13:26,270 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 01:13:33,312 - ats_resume_scorer - ERROR - routes:69 - Full analysis pipeline failed: unsupported operand type(s) for +: 'NoneType' and 'str'
+2026-03-30 01:14:05,478 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:14:06,464 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:14:06,464 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:14:11,306 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:14:11,307 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:14:22,495 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:14:22,495 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:14:25,248 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:14:25,456 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:14:25,456 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:14:28,548 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:14:28,549 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:14:28,549 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 01:15:40,121 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:15:40,698 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:15:40,698 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:15:44,927 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:15:44,927 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:15:54,770 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:15:54,771 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:15:54,866 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:15:55,096 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:15:55,096 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:15:58,453 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:15:58,454 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:15:58,454 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 01:16:22,160 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:16:22,763 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:16:22,764 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:16:27,170 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:16:27,170 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:16:37,910 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:16:37,910 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:16:38,040 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:16:38,250 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:16:38,250 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:16:41,664 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:16:41,664 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:16:41,664 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 01:16:55,925 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 01:18:33,542 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 01:18:33,542 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 01:18:39,302 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 01:18:39,302 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 01:18:51,195 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 01:18:51,196 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 01:19:15,728 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 01:19:16,016 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 01:19:16,016 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 01:19:19,788 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 01:19:19,788 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 01:19:19,789 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4

@@ -271,7 +271,7 @@ def _calc_ats_compatibility_score(
     skills_count = len(parsed_resume.get('skills', []))
 
     exp_desc_len = sum(len(e.get('description', '')) for e in exp_entries)
-    edu_desc_len = sum(len(e.get('degree', '') + e.get('institution', '')) for e in edu_entries)
+    edu_desc_len = sum(len((e.get('degree') or '') + (e.get('institution') or '')) for e in edu_entries)  # Handle None to prevent string concatenation errors
 
     #deduction03
     short_sections = sum([

@@ -38,7 +38,7 @@ class AnalysisResponse(BaseModel):
     issues_summary: List[str]
     detailed_feedback: List[IssueDetail]
     jd_match_analysis: Optional[JDComparison] = None
-    skill_validation_detials=Optional[SkillValidationDetails] = None
+    skill_validation_detials: Optional[SkillValidationDetails] = None
 
     ats_score: float
     keyword_match: float = 0.0

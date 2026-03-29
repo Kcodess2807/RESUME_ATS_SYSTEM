@@ -45,13 +45,13 @@ app=FastAPI(
     description=APP_DESCRIPTION, 
     version=APP_VERSION, 
     lifespan=lifespan,
-    docs_url='/docs'
+    docs_url='/docs',
     redoc_url='/redoc'
 )
 
 app.add_middleware(
     CORSMiddleware, 
-    allowed_origins=ALLOWED_ORIGINS
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True, 
     allow_methods     = ['*'],
     allow_headers     = ['*'],

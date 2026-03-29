@@ -40,6 +40,6 @@ JD_SEMANTIC_WEIGHT=0.4
 
 MONGODB_URI=os.getenv('MONGODB_URI', '')
 MONGODB_DB=os.getenv('MONGODB_DB', 'resume_sts')
-
+GROQ_API_KEY=os.getenv('GROQ_API_KEY', '')
 
 
