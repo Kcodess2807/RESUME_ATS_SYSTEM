@@ -72,13 +72,18 @@ def detect_location_info(text: str, nlp: spacy.Language) -> Dict:
 
 
 def _skill_matches(skill: str, text: str, embedder: SentenceTransformer, threshold: float) -> Tuple[bool, float]:
+
+    #fast, o(n) directly check if skill is a substring of the text (case-insensitive)
     if skill.lower() in text.lower():
         return True, 1.0
+    
+    #slow, semantic similarity check using sentence embeddings
     sim = _calculate_semantic_similarity(skill, text, embedder)
     return sim >= threshold, sim
 
 
 def _calculate_semantic_similarity(skill: str, text: str, embedder: SentenceTransformer) -> float:
+    #similarity = (A · B) / (|A| × |B|)
     if not skill or not text:
         return 0.0
     try:

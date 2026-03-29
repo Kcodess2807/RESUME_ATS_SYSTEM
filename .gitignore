@@ -1,1 +1,4 @@
 .env
+/ml model
+/jupyter notebook/datset
+jupyter notebooks/dataset/embeddings/resume_embeddings.pkl
