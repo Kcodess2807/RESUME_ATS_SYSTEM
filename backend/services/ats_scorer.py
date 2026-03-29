@@ -23,7 +23,7 @@ STREET_ADDRESS_PATTERN = (
     r'(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Lane|Ln|Drive|Dr|Court|Ct|Circle|Cir|Way|Place|Pl)\b'
 )
 
-
+#Location/privacy detection
 def detect_location_info(text: str, nlp: spacy.Language) -> Dict:
     locations = []
 
@@ -97,7 +97,7 @@ def _calculate_semantic_similarity(skill: str, text: str, embedder: SentenceTran
         log_warning(f"Similarity error for '{skill}': {e}", context='ats_scorer')
         return 0.0
 
-
+#Skill validation
 def validate_skills_with_projects(
     skills: List[str],
     projects: List[Dict],
@@ -159,7 +159,9 @@ def validate_skills_with_projects(
         'validation_score':      validation_score,
     }
 
+#Five component calculators
 
+#1. FORMATTING SCORE
 def _calc_formatting_score(parsed_resume: Dict, text: str) -> float:
     score = 0.0
 
@@ -194,7 +196,7 @@ def _calc_formatting_score(parsed_resume: Dict, text: str) -> float:
 
     return min(20.0, max(0.0, score))
 
-
+#2. KEYWORD OPTIMIZATION SCORE
 def _calc_keywords_score(
     resume_keywords: List[str],
     skills: List[str],
@@ -218,7 +220,7 @@ def _calc_keywords_score(
 
     return min(25.0, max(0.0, score))
 
-
+#3. CONTENT QUALITY SCORE
 def _calc_content_score(
     text: str,
     action_verbs: List[str],
@@ -243,11 +245,11 @@ def _calc_content_score(
 
     return min(25.0, max(0.0, score))
 
-
+#4. SKILL VALIDATION SCORE
 def _calc_skill_validation_score(validation_results: Dict) -> float:
     return min(15.0, max(0.0, validation_results.get('validation_score', 0.0)))
 
-
+#5. ATS COMPATIBILITY SCORE
 def _calc_ats_compatibility_score(
     text: str,
     location_results: Dict,
@@ -256,8 +258,10 @@ def _calc_ats_compatibility_score(
 
     score = 15.0
 
+    #dedeuction01
     score -= location_results.get('penalty_applied', 0.0)
 
+    #deduction02
     special_chars = len(re.findall(r'[│┤├┼┴┬╔╗╚╝═║╠╣╦╩╬]', text))
     if special_chars > 20:    score -= 2.0
     elif special_chars > 10:  score -= 1.0
@@ -269,6 +273,7 @@ def _calc_ats_compatibility_score(
     exp_desc_len = sum(len(e.get('description', '')) for e in exp_entries)
     edu_desc_len = sum(len(e.get('degree', '') + e.get('institution', '')) for e in edu_entries)
 
+    #deduction03
     short_sections = sum([
         bool(exp_entries) and exp_desc_len < 20,
         bool(edu_entries) and edu_desc_len < 20,
@@ -282,7 +287,7 @@ def _calc_ats_compatibility_score(
 
     return min(15.0, max(0.0, score))
 
-
+#Overall score calculation and interpretation
 def generate_strengths(
     score_results: Dict,
     skill_validation_results: Dict,
@@ -292,24 +297,24 @@ def generate_strengths(
     strengths = []
 
     if score_results['formatting_score']       >= 16:
-        strengths.append('✅ Well-structured with clear sections and bullet points')
+        strengths.append(' Well-structured with clear sections and bullet points')
     if score_results['keywords_score']          >= 20:
-        strengths.append('✅ Strong keyword optimization and skills presence')
+        strengths.append(' Strong keyword optimization and skills presence')
     if score_results['content_score']           >= 20:
-        strengths.append('✅ Excellent use of action verbs and quantifiable achievements')
+        strengths.append(' Excellent use of action verbs and quantifiable achievements')
     if score_results['skill_validation_score']  >= 12:
         pct = skill_validation_results.get('validation_percentage', 0) * 100
-        strengths.append(f'✅ {pct:.0f}% of skills are validated by projects')
+        strengths.append(f' {pct:.0f}% of skills are validated by projects')
     if score_results['ats_compatibility_score'] >= 13:
-        strengths.append('✅ Excellent ATS compatibility with clean formatting')
+        strengths.append(' Excellent ATS compatibility with clean formatting')
     if grammar_results.get('total_errors', 0)   == 0:
-        strengths.append('✅ Error-free grammar and spelling')
+        strengths.append(' Error-free grammar and spelling')
 
     if not strengths:
         strengths.append('Your resume has potential - focus on the recommendations below')
     return strengths
 
-
+#Critical issues that could cause ATS rejection
 def generate_critical_issues(
     score_results: Dict,
     grammar_results: Dict,
@@ -331,7 +336,7 @@ def generate_critical_issues(
 
     return issues
 
-
+#Actionable improvements to enhance ATS performance
 def generate_improvements(
     score_results: Dict,
     skill_validation_results: Dict,
@@ -352,7 +357,7 @@ def generate_improvements(
 
     return improvements
 
-
+#Interpretation of overall score
 def _generate_score_interpretation(overall_score: float) -> str:
     if overall_score >= 90:    return 'Excellent! Your resume is highly optimized for ATS systems.'
     elif overall_score >= 80:  return 'Great! Your resume should perform well with most ATS systems.'
@@ -361,7 +366,7 @@ def _generate_score_interpretation(overall_score: float) -> str:
     elif overall_score >= 50:  return 'Below Average. Significant improvements needed for ATS compatibility.'
     else:                      return 'Poor. Your resume requires major revisions to pass ATS screening.'
 
-
+#Score aggregation and final interpretation
 def calculate_overall_score(
     text: str,
     parsed_resume: Dict,
