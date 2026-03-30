@@ -109,3 +109,24 @@
 2026-03-30 01:19:19,788 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
 2026-03-30 01:19:19,788 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
 2026-03-30 01:19:19,789 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 02:47:56,575 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 14:03:51,634 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 14:03:51,635 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 14:03:58,400 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 14:03:58,401 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 14:04:12,667 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 14:04:12,667 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 14:05:06,000 - ats_resume_scorer - INFO - main:41 - shutting down the api!!
+2026-03-30 14:05:10,274 - ats_resume_scorer - INFO - main:20 - Starting ATS Resume Analyzer API...
+2026-03-30 14:05:10,274 - ats_resume_scorer - INFO - main:22 - Loading spaCy NLP model: en_core_web_md
+2026-03-30 14:05:14,918 - ats_resume_scorer - INFO - main:26 - Loaded en_core_web_md
+2026-03-30 14:05:14,918 - ats_resume_scorer - INFO - main:32 - Loading SentenceTransformer: all-MiniLM-L6-v2
+2026-03-30 14:05:27,215 - ats_resume_scorer - INFO - main:35 - Loaded all-MiniLM-L6-v2
+2026-03-30 14:05:27,215 - ats_resume_scorer - INFO - main:37 - All models loaded. API is ready to serve requests.
+2026-03-30 14:05:44,544 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Parsing file: Arush_Resume-1.pdf
+2026-03-30 14:05:44,796 - ats_resume_scorer - INFO - file_utils:179 - parse_resume_file: Extracted 6482 chars from Arush_Resume-1.pdf
+2026-03-30 14:05:44,796 - ats_resume_scorer - INFO - routes:49 - Parsed 'Arush_Resume-1.pdf': 6482 chars extracted
+2026-03-30 14:05:48,427 - ats_resume_scorer - INFO - resume_analyzer:20 - Groq parsed summary: ''
+2026-03-30 14:05:48,427 - ats_resume_scorer - INFO - resume_analyzer:21 - Groq parsed skills count: 46
+2026-03-30 14:05:48,427 - ats_resume_scorer - INFO - resume_analyzer:22 - Groq parsed experience count: 4
+2026-03-30 14:06:01,107 - ats_resume_scorer - INFO - mongodb:53 - Saved analysis for user user_3AiF7eHG6Ogqvm7rahUuADKwshZ: 69ca35ee9321e65519e0057d

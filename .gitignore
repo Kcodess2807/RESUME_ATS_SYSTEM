@@ -1,7 +1,59 @@
+# Environment variables
 .env
-/ml model
-/jupyter notebook/datset
-jupyter notebooks/dataset/embeddings/resume_embeddings.pkl
-backend/__pycache__
-backend/api/__pycache__
-backend/core/__pycache__
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+backend/logs/
+
+# ML Models & Data
+/ml model/
+*.pkl
+*.h5
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+jupyter notebooks/dataset/
+jupyter notebook/datset/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploaded files (temp)
+uploads/
+tmp/
+backend/logs
