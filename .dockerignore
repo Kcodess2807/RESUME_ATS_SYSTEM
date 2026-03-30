@@ -1,0 +1,20 @@
+# Don't send these to Docker build context
+.git
+.github
+.vscode
+.claude
+.elasticbeanstalk
+frontend/
+jupyter notebooks/
+README.md
+# Exclude eval artifacts inside the finetuned model dir (CSV files, etc.)
+ml model/finetuned-bert/eval/
+__pycache__
+**/__pycache__
+*.pyc
+.env
+*.log
+logs/
+.pytest_cache
+htmlcov
+node_modules
